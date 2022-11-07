@@ -1,7 +1,9 @@
 const express = require('express');
-const { getSites } = require('../controller/sites');
+const { getSites, addSite } = require('../controller/sites');
 const router = express.Router();
 
-router.route('/').get(getSites);
+router.route('/')
+    .get(getSites)
+    .post(addSite);
 
 module.exports = router;

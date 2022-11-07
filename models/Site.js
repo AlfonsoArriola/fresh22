@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 const SiteSchema = new mongoose.Schema({
-    storeId: {
+    siteId: {
         type: String,
         required: [true, 'Please add a site ID'],
         unique: true,
